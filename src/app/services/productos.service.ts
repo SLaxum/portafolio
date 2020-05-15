@@ -23,8 +23,11 @@ export class ProductosService {
 
         this.productos = resp;
         this.cargando = false;
-        console.log(resp);
 
       });
+  }
+
+  getProducto( id: string ){
+    return this.http.get(`https://aprendiendo-angular-49675.firebaseio.com/productos/${ id }.json`);
   }
 }
