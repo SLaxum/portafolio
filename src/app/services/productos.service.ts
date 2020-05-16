@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Producto } from '../interfaces/producto.interface';
-import { timingSafeEqual } from 'crypto';
 
 @Injectable({
   providedIn: 'root'
